@@ -34,5 +34,26 @@ Route::group([
         Route::get('productor/{id}', 'ProductorController@show');
         Route::post('productor', 'ProductorController@create');
         Route::put('productor/{id}', 'ProductorController@update');
+
+        
+        Route::get('periodo', 'PeriodoController@index');
+        Route::get('periodo/{id}', 'PeriodoController@show');
+        Route::post('periodo', 'PeriodoController@create');
+        Route::put('periodo/{id}', 'PeriodoController@update');
+        Route::delete('periodo/{id}', 'PeriodoController@update');
+
+        
+        Route::get('vacuno', 'VacunoController@index');
+        Route::get('vacuno/{id}', 'VacunoController@show');
+        Route::post('vacuno', 'VacunoController@create');
+        Route::put('vacuno/{id}', 'VacunoController@update');
+        Route::delete('vacuno/{id}', 'VacunoController@update');
+        
+
+        Route::get('finca', 'FincaController@index');
+        Route::get('finca/{id}', 'FincaController@show');
+        Route::post('finca', 'FincaController@create');
+        Route::put('finca/{id}', 'FincaController@update');
+        Route::delete('finca/{id}', 'FincaController@update');
 });
     
