@@ -50,10 +50,31 @@ Route::group([
         Route::delete('vacuno/{id}', 'VacunoController@update');
         
 
-        Route::get('finca', 'FincaController@index');
-        Route::get('finca/{id}', 'FincaController@show');
-        Route::post('finca', 'FincaController@create');
-        Route::put('finca/{id}', 'FincaController@update');
-        Route::delete('finca/{id}', 'FincaController@update');
+        Route::get('almacenTipos', 'AlmacenTipoController@index');
+        Route::get('almacenTipos/{id}', 'AlmacenTipoController@show');
+        Route::post('almacenTipos', 'AlmacenTipoController@create');
+        Route::put('almacenTipos/{id}', 'AlmacenTipoController@update');
+        Route::delete('almacenTipos/{id}', 'AlmacenTipoController@update');
+        
+
+        Route::get('grupoSanguineo', 'GrupoSanquineoController@index');
+        Route::get('grupoSanguineo/{id}', 'GrupoSanquineoController@show');
+        Route::post('grupoSanguineo', 'GrupoSanquineoController@create');
+        Route::put('grupoSanguineo/{id}', 'GrupoSanquineoController@update');
+        Route::delete('grupoSanguineo/{id}', 'GrupoSanquineoController@update');
+        
+
+        Route::get('razaVacuno', 'RazaVacunoController@index');
+        Route::get('razaVacuno/{id}', 'RazaVacunoController@show');
+        Route::post('razaVacuno', 'RazaVacunoController@create');
+        Route::put('razaVacuno/{id}', 'RazaVacunoController@update');
+        Route::delete('razaVacuno/{id}', 'RazaVacunoController@update');
+        
+
+        Route::get('almacen', 'AlmacenController@index');
+        Route::get('almacen/{id}', 'AlmacenController@show');
+        Route::post('almacen', 'AlmacenController@create');
+        Route::put('almacen/{id}', 'AlmacenController@update');
+        Route::delete('almacen/{id}', 'AlmacenController@update');
 });
     
